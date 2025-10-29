@@ -36,12 +36,22 @@ function renderNavigation(isSubpage = false) {
     `;
 }
 
-// Initialize navigation on page load
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header');
-    if (header && !header.querySelector('nav')) {
-        // Determine if this is a subpage
-        const isSubpage = window.location.pathname.includes('/locations/');
-        header.innerHTML = renderNavigation(isSubpage);
+// Initialize navigation immediately
+(function() {
+    // Determine if this is a subpage
+    const isSubpage = window.location.pathname.includes('/locations/');
+
+    // Inject navigation as soon as possible
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', injectNav);
+    } else {
+        injectNav();
     }
-});
+
+    function injectNav() {
+        const header = document.querySelector('header');
+        if (header && !header.querySelector('nav')) {
+            header.innerHTML = renderNavigation(isSubpage);
+        }
+    }
+})();
