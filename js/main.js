@@ -501,27 +501,36 @@ function initCarousel() {
     const scrollAmount = (cardWidth + gap) * 3; // Scroll 3 cards at a time
 
     prevBtn.addEventListener('click', () => {
-        carousel.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
+        const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+        // If at the beginning, loop to the end
+        if (carousel.scrollLeft <= 0) {
+            carousel.scrollTo({
+                left: maxScroll,
+                behavior: 'smooth'
+            });
+        } else {
+            carousel.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        }
     });
 
     nextBtn.addEventListener('click', () => {
-        carousel.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    // Update button states based on scroll position
-    function updateButtonStates() {
         const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
-        prevBtn.disabled = carousel.scrollLeft <= 0;
-        nextBtn.disabled = carousel.scrollLeft >= maxScroll - 5; // -5 for rounding
-    }
-
-    carousel.addEventListener('scroll', updateButtonStates);
-    updateButtonStates(); // Initial state
+        // If at or near the end, loop back to the beginning
+        if (carousel.scrollLeft >= maxScroll - 5) {
+            carousel.scrollTo({
+                left: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            carousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    });
 }
