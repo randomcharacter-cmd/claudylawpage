@@ -92,6 +92,8 @@ const translations = {
         spec_litigation: "Commercial Litigation",
         spec_international: "International Law",
         spec_compliance: "Compliance & Regulatory",
+        spec_personality: "Personality Rights",
+        spec_criminal_specialist: "Specialist Criminal Defense Attorney",
     },
     de: {
         // Navigation
@@ -185,6 +187,102 @@ const translations = {
         spec_litigation: "Prozessführung",
         spec_international: "Internationales Recht",
         spec_compliance: "Compliance & Regulierung",
+        spec_personality: "Persönlichkeitsrechte",
+        spec_criminal_specialist: "Fachanwalt für Strafrecht",
+    },
+    es: {
+        // Navigation
+        home: "Inicio",
+        locations: "Ubicaciones",
+        about: "Sobre Nosotros",
+        contact: "Contacto",
+
+        // Homepage
+        hero_title: "Vanguard Global Legal Group",
+        hero_subtitle: "Excelencia en Servicios Jurídicos Internacionales",
+        hero_description: "Con oficinas en cuatro continentes, brindamos soluciones legales integrales a clientes en todo el mundo.",
+        cta_contact: "Contáctenos",
+        cta_learn: "Más Información",
+
+        // Statistics
+        stat_years: "Años de Excelencia",
+        stat_lawyers: "Abogados Expertos",
+        stat_offices: "Oficinas Globales",
+        stat_cases: "Casos Ganados",
+
+        // Practice Areas
+        practice_title: "Nuestras Áreas de Práctica",
+        practice_subtitle: "Servicios legales integrales en múltiples disciplinas",
+
+        // Lawyers Showcase
+        lawyers_title: "Conozca a Nuestros Expertos Legales",
+        lawyers_subtitle: "Abogados de clase mundial con experiencia diversa en nuestras oficinas globales",
+
+        // Why Choose Us
+        why_title: "Por Qué Elegir Vanguard Global",
+        why_subtitle: "Comprometidos con la excelencia en todos los aspectos del servicio legal",
+        why_exp_title: "Experiencia Global",
+        why_exp_desc: "Nuestro equipo aporta décadas de experiencia legal internacional a cada caso.",
+        why_result_title: "Resultados Comprobados",
+        why_result_desc: "Historial de resultados exitosos para clientes en todo el mundo.",
+        why_dedicated_title: "Servicio Dedicado",
+        why_dedicated_desc: "Atención personalizada y compromiso con sus necesidades legales.",
+        why_network_title: "Red Mundial",
+        why_network_desc: "Soporte legal sin interrupciones en 9 ciudades principales del mundo.",
+
+        // Contact
+        contact_title: "Póngase en Contacto",
+        contact_subtitle: "¿Listo para discutir sus necesidades legales? Contáctenos hoy.",
+        contact_desc: "Nuestro equipo está listo para brindar asesoramiento legal experto adaptado a sus necesidades específicas. Comuníquese para programar una consulta.",
+        contact_email_label: "Correo Electrónico",
+        contact_phone_label: "Teléfono",
+        contact_address_label: "Sede Central",
+        contact_address: "123 Legal Plaza, New York, NY 10001",
+
+        // Form
+        form_name: "Nombre Completo",
+        form_email: "Correo Electrónico",
+        form_phone: "Número de Teléfono",
+        form_office: "Oficina Preferida",
+        form_service: "Servicio Legal",
+        form_message: "Mensaje",
+        form_submit: "Enviar Mensaje",
+        form_select_office: "Seleccione una oficina",
+        form_select_service: "Seleccione un servicio",
+
+        our_locations: "Nuestra Presencia Global",
+        location_desc: "Oficinas estratégicas en los principales centros financieros",
+
+        // Location names
+        frankfurt: "Fráncfort",
+        munich: "Múnich",
+        istanbul: "Estambul",
+        paris: "París",
+        london: "Londres",
+        hongkong: "Hong Kong",
+        newyork: "Nueva York",
+        bogota: "Bogotá",
+        moscow: "Moscú",
+
+        // Location page
+        our_team: "Nuestro Equipo Legal",
+        specialization: "Especialización",
+        contact_office: "Contactar Esta Oficina",
+
+        // Specializations
+        spec_criminal: "Derecho Penal",
+        spec_corporate: "Derecho Corporativo",
+        spec_tax: "Derecho Tributario",
+        spec_ip: "Propiedad Intelectual",
+        spec_family: "Derecho de Familia",
+        spec_real_estate: "Derecho Inmobiliario",
+        spec_labor: "Derecho Laboral",
+        spec_banking: "Banca y Finanzas",
+        spec_merger: "Fusiones y Adquisiciones",
+        spec_litigation: "Litigios Comerciales",
+        spec_international: "Derecho Internacional",
+        spec_compliance: "Cumplimiento y Regulación",
+        spec_personality: "Derechos de Personalidad",
     }
 };
 
@@ -212,6 +310,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animate counter numbers on stats section
     animateCounters();
+
+    // Initialize carousel navigation
+    initCarousel();
 });
 
 // Set language function
@@ -338,11 +439,52 @@ function initContactForm() {
         console.log('Form submitted:', formData);
 
         // Show success message
-        alert(currentLang === 'en'
-            ? 'Thank you for your message! We will contact you soon.'
-            : 'Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.');
+        const messages = {
+            en: 'Thank you for your message! We will contact you soon.',
+            de: 'Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.',
+            es: '¡Gracias por su mensaje! Nos pondremos en contacto pronto.'
+        };
+        alert(messages[currentLang] || messages.en);
 
         // Reset form
         form.reset();
     });
+}
+
+// Initialize carousel navigation
+function initCarousel() {
+    const carousel = document.querySelector('.lawyers-carousel');
+    const prevBtn = document.querySelector('.carousel-nav.prev');
+    const nextBtn = document.querySelector('.carousel-nav.next');
+
+    if (!carousel || !prevBtn || !nextBtn) return;
+
+    const cardWidth = 300; // min-width of cards
+    const gap = 32; // 2rem gap
+    const scrollAmount = (cardWidth + gap) * 3; // Scroll 3 cards at a time
+
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    // Update button states based on scroll position
+    function updateButtonStates() {
+        const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+        prevBtn.disabled = carousel.scrollLeft <= 0;
+        nextBtn.disabled = carousel.scrollLeft >= maxScroll - 5; // -5 for rounding
+    }
+
+    carousel.addEventListener('scroll', updateButtonStates);
+    updateButtonStates(); // Initial state
 }

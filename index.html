@@ -15,11 +15,25 @@
             <ul class="nav-links">
                 <li><a href="#home" data-translate="home">Home</a></li>
                 <li><a href="#practice-areas" data-translate="about">About Us</a></li>
-                <li><a href="#locations" data-translate="locations">Locations</a></li>
+                <li class="dropdown">
+                    <a href="#locations" class="dropdown-toggle" data-translate="locations">Locations</a>
+                    <div class="dropdown-menu">
+                        <a href="locations/frankfurt.html" data-translate="frankfurt">Frankfurt</a>
+                        <a href="locations/munich.html" data-translate="munich">Munich</a>
+                        <a href="locations/istanbul.html" data-translate="istanbul">Istanbul</a>
+                        <a href="locations/paris.html" data-translate="paris">Paris</a>
+                        <a href="locations/london.html" data-translate="london">London</a>
+                        <a href="locations/hongkong.html" data-translate="hongkong">Hong Kong</a>
+                        <a href="locations/newyork.html" data-translate="newyork">New York</a>
+                        <a href="locations/bogota.html" data-translate="bogota">Bogotá</a>
+                        <a href="locations/moscow.html" data-translate="moscow">Moscow</a>
+                    </div>
+                </li>
                 <li><a href="#contact" data-translate="contact">Contact</a></li>
                 <li class="language-switcher">
                     <button class="lang-btn" data-lang="en">EN</button>
                     <button class="lang-btn" data-lang="de">DE</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
                 </li>
             </ul>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
@@ -123,6 +137,12 @@
                     <h3 data-translate="spec_compliance">Compliance & Regulatory</h3>
                     <p>Ensuring adherence to complex regulatory frameworks and developing robust compliance programs.</p>
                 </div>
+
+                <div class="practice-area-card fade-in">
+                    <span class="practice-area-icon">👤</span>
+                    <h3 data-translate="spec_personality">Personality Rights</h3>
+                    <p>Protection of personal rights including privacy, image rights, and reputation in the digital age.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -134,10 +154,12 @@
             <p class="section-subtitle fade-in" data-translate="lawyers_subtitle">World-class attorneys with diverse expertise across our global offices</p>
 
             <div class="lawyers-carousel-container">
+                <button class="carousel-nav prev" aria-label="Previous">‹</button>
+                <button class="carousel-nav next" aria-label="Next">›</button>
                 <div class="lawyers-carousel">
                     <!-- Frankfurt -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Dr. Andrea Hoffmann" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80" alt="Dr. Andrea Hoffmann" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Dr. Andrea Hoffmann</h3>
                             <p class="location">📍 <span data-translate="frankfurt">Frankfurt</span></p>
@@ -146,7 +168,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Michael Becker" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=1000&fit=crop&q=80" alt="Michael Becker" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Michael Becker</h3>
                             <p class="location">📍 <span data-translate="frankfurt">Frankfurt</span></p>
@@ -156,16 +178,16 @@
 
                     <!-- Munich -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Klaus Müller" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop&q=80" alt="Dr. Klaus Müller" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Dr. Klaus Müller</h3>
                             <p class="location">📍 <span data-translate="munich">Munich</span></p>
-                            <p class="specialization">Fachanwalt für Strafrecht</p>
+                            <p class="specialization" data-translate="spec_criminal_specialist">Fachanwalt für Strafrecht</p>
                         </div>
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sabine Weber" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop&q=80" alt="Dr. Sabine Weber" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Dr. Sabine Weber</h3>
                             <p class="location">📍 <span data-translate="munich">Munich</span></p>
@@ -175,7 +197,7 @@
 
                     <!-- Istanbul -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Mehmet Yılmaz" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=1000&fit=crop&q=80" alt="Mehmet Yılmaz" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Mehmet Yılmaz</h3>
                             <p class="location">📍 <span data-translate="istanbul">Istanbul</span></p>
@@ -184,7 +206,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Ayşe Demir" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800&h=1000&fit=crop&q=80" alt="Ayşe Demir" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Ayşe Demir</h3>
                             <p class="location">📍 <span data-translate="istanbul">Istanbul</span></p>
@@ -194,7 +216,7 @@
 
                     <!-- Paris -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Sophie Dubois" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop&q=80" alt="Sophie Dubois" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Sophie Dubois</h3>
                             <p class="location">📍 <span data-translate="paris">Paris</span></p>
@@ -203,7 +225,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Pierre Martin" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop&q=80" alt="Pierre Martin" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Pierre Martin</h3>
                             <p class="location">📍 <span data-translate="paris">Paris</span></p>
@@ -213,7 +235,7 @@
 
                     <!-- London -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="James Thompson" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1000&fit=crop&q=80" alt="James Thompson" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>James Thompson</h3>
                             <p class="location">📍 <span data-translate="london">London</span></p>
@@ -222,7 +244,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Victoria Clarke" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=1000&fit=crop&q=80" alt="Victoria Clarke" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Victoria Clarke</h3>
                             <p class="location">📍 <span data-translate="london">London</span></p>
@@ -232,7 +254,7 @@
 
                     <!-- Hong Kong -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Li Wei" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1598550487031-0d6eaf2d4c0b?w=800&h=1000&fit=crop&q=80" alt="Li Wei" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Li Wei</h3>
                             <p class="location">📍 <span data-translate="hongkong">Hong Kong</span></p>
@@ -241,7 +263,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="Chen Zhang" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=800&h=1000&fit=crop&q=80" alt="Chen Zhang" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Chen Zhang</h3>
                             <p class="location">📍 <span data-translate="hongkong">Hong Kong</span></p>
@@ -251,7 +273,7 @@
 
                     <!-- New York -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Robert Mitchell" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1000&fit=crop&q=80" alt="Robert Mitchell" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Robert Mitchell</h3>
                             <p class="location">📍 <span data-translate="newyork">New York</span></p>
@@ -260,7 +282,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Sarah Williams" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=1000&fit=crop&q=80" alt="Sarah Williams" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Sarah Williams</h3>
                             <p class="location">📍 <span data-translate="newyork">New York</span></p>
@@ -270,7 +292,7 @@
 
                     <!-- Bogotá -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Carlos Rodríguez" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop&q=80" alt="Carlos Rodríguez" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Carlos Rodríguez</h3>
                             <p class="location">📍 <span data-translate="bogota">Bogotá</span></p>
@@ -279,7 +301,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="María González" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&h=1000&fit=crop&q=80" alt="María González" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>María González</h3>
                             <p class="location">📍 <span data-translate="bogota">Bogotá</span></p>
@@ -289,7 +311,7 @@
 
                     <!-- Moscow -->
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Dmitry Volkov" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1542178243-bc20204b769f?w=800&h=1000&fit=crop&q=80" alt="Dmitry Volkov" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Dmitry Volkov</h3>
                             <p class="location">📍 <span data-translate="moscow">Moscow</span></p>
@@ -298,7 +320,7 @@
                     </div>
 
                     <div class="lawyer-showcase-card scale-in">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Olga Petrova" class="lawyer-showcase-photo">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=1000&fit=crop&q=80" alt="Olga Petrova" class="lawyer-showcase-photo">
                         <div class="lawyer-showcase-info">
                             <h3>Olga Petrova</h3>
                             <p class="location">📍 <span data-translate="moscow">Moscow</span></p>
