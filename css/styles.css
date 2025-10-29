@@ -555,6 +555,11 @@ nav {
     line-height: 1.7;
 }
 
+.why-choose-section .section-title,
+.why-choose-section .section-subtitle {
+    color: var(--white);
+}
+
 /* Contact Section */
 .contact-section {
     padding: 6rem 0;

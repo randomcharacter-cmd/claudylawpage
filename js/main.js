@@ -94,6 +94,18 @@ const translations = {
         spec_compliance: "Compliance & Regulatory",
         spec_personality: "Personality Rights",
         spec_criminal_specialist: "Specialist Criminal Defense Attorney",
+
+        // Practice Area Descriptions
+        desc_corporate: "Expert guidance in corporate governance, compliance, and business transactions across international jurisdictions.",
+        desc_litigation: "Aggressive representation in complex commercial disputes, arbitration, and mediation proceedings worldwide.",
+        desc_merger: "Strategic counsel on cross-border M&A transactions, due diligence, and post-merger integration.",
+        desc_banking: "Comprehensive advice on banking regulations, structured finance, and international financial transactions.",
+        desc_ip: "Protection and enforcement of patents, trademarks, copyrights, and trade secrets globally.",
+        desc_tax: "Strategic tax planning, compliance, and dispute resolution for multinational corporations and high-net-worth individuals.",
+        desc_real_estate: "Full-service real estate legal support for acquisitions, development, leasing, and property management.",
+        desc_labor: "Counsel on employment contracts, workplace disputes, labor relations, and regulatory compliance.",
+        desc_compliance: "Ensuring adherence to complex regulatory frameworks and developing robust compliance programs.",
+        desc_personality: "Protection of personal rights including privacy, image rights, and reputation in the digital age.",
     },
     de: {
         // Navigation
@@ -189,6 +201,18 @@ const translations = {
         spec_compliance: "Compliance & Regulierung",
         spec_personality: "Persönlichkeitsrechte",
         spec_criminal_specialist: "Fachanwalt für Strafrecht",
+
+        // Practice Area Descriptions
+        desc_corporate: "Fachkundige Beratung in Corporate Governance, Compliance und Geschäftstransaktionen über internationale Rechtsordnungen hinweg.",
+        desc_litigation: "Aggressive Vertretung in komplexen Handelsstreitigkeiten, Schiedsverfahren und Mediationsverfahren weltweit.",
+        desc_merger: "Strategische Beratung bei grenzüberschreitenden M&A-Transaktionen, Due Diligence und Post-Merger-Integration.",
+        desc_banking: "Umfassende Beratung zu Bankenregulierung, strukturierter Finanzierung und internationalen Finanztransaktionen.",
+        desc_ip: "Schutz und Durchsetzung von Patenten, Marken, Urheberrechten und Geschäftsgeheimnissen weltweit.",
+        desc_tax: "Strategische Steuerplanung, Compliance und Streitbeilegung für multinationale Konzerne und vermögende Privatpersonen.",
+        desc_real_estate: "Umfassende Immobilienrechtsberatung für Akquisitionen, Entwicklung, Vermietung und Immobilienverwaltung.",
+        desc_labor: "Beratung zu Arbeitsverträgen, Arbeitsplatzstreitigkeiten, Arbeitsbeziehungen und regulatorischer Compliance.",
+        desc_compliance: "Sicherstellung der Einhaltung komplexer regulatorischer Rahmenbedingungen und Entwicklung robuster Compliance-Programme.",
+        desc_personality: "Schutz persönlicher Rechte einschließlich Privatsphäre, Bildrechte und Reputation im digitalen Zeitalter.",
     },
     es: {
         // Navigation
@@ -283,6 +307,19 @@ const translations = {
         spec_international: "Derecho Internacional",
         spec_compliance: "Cumplimiento y Regulación",
         spec_personality: "Derechos de Personalidad",
+        spec_criminal_specialist: "Abogado Especialista en Defensa Penal",
+
+        // Practice Area Descriptions
+        desc_corporate: "Orientación experta en gobierno corporativo, cumplimiento y transacciones comerciales en jurisdicciones internacionales.",
+        desc_litigation: "Representación agresiva en disputas comerciales complejas, arbitraje y procedimientos de mediación en todo el mundo.",
+        desc_merger: "Asesoramiento estratégico en transacciones transfronterizas de fusiones y adquisiciones, debida diligencia e integración post-fusión.",
+        desc_banking: "Asesoramiento integral sobre regulaciones bancarias, finanzas estructuradas y transacciones financieras internacionales.",
+        desc_ip: "Protección y aplicación de patentes, marcas comerciales, derechos de autor y secretos comerciales a nivel mundial.",
+        desc_tax: "Planificación fiscal estratégica, cumplimiento y resolución de disputas para corporaciones multinacionales e individuos de alto patrimonio.",
+        desc_real_estate: "Soporte legal inmobiliario integral para adquisiciones, desarrollo, arrendamiento y gestión de propiedades.",
+        desc_labor: "Asesoramiento sobre contratos laborales, disputas laborales, relaciones laborales y cumplimiento regulatorio.",
+        desc_compliance: "Garantizar el cumplimiento de marcos regulatorios complejos y desarrollar programas de cumplimiento robustos.",
+        desc_personality: "Protección de derechos personales incluyendo privacidad, derechos de imagen y reputación en la era digital.",
     }
 };
 
