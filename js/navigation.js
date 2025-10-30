@@ -15,12 +15,15 @@ function renderNavigation(isSubpage = false) {
                     <div class="dropdown-menu">
                         <a href="${prefix}locations/frankfurt.html" data-translate="frankfurt">Frankfurt</a>
                         <a href="${prefix}locations/munich.html" data-translate="munich">Munich</a>
+                        <a href="${prefix}locations/berlin.html" data-translate="berlin">Berlin</a>
                         <a href="${prefix}locations/istanbul.html" data-translate="istanbul">Istanbul</a>
                         <a href="${prefix}locations/paris.html" data-translate="paris">Paris</a>
                         <a href="${prefix}locations/london.html" data-translate="london">London</a>
                         <a href="${prefix}locations/hongkong.html" data-translate="hongkong">Hong Kong</a>
                         <a href="${prefix}locations/newyork.html" data-translate="newyork">New York</a>
                         <a href="${prefix}locations/bogota.html" data-translate="bogota">Bogotá</a>
+                        <a href="${prefix}locations/barcelona.html" data-translate="barcelona">Barcelona</a>
+                        <a href="${prefix}locations/mexicocity.html" data-translate="mexicocity">Mexico City</a>
                         <a href="${prefix}locations/moscow.html" data-translate="moscow">Moscow</a>
                     </div>
                 </li>
