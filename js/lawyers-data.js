@@ -35,6 +35,24 @@ const lawyersData = {
             specialization: "spec_tax"
         }
     ],
+    berlin: [
+        {
+            name: "Alexander Falkenstein",
+            photo: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_criminal_specialist",
+            specialText: "Fachanwalt für Strafrecht" // Fallback for non-English
+        },
+        {
+            name: "Dr. Nina Hartmann",
+            photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_ip"
+        },
+        {
+            name: "Stefan Berger",
+            photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_merger"
+        }
+    ],
     istanbul: [
         {
             name: "Mehmet Yılmaz",
@@ -135,6 +153,40 @@ const lawyersData = {
             name: "Luis Martínez",
             photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=1000&fit=crop&q=80",
             specialization: "spec_criminal"
+        }
+    ],
+    barcelona: [
+        {
+            name: "Isabel Ramírez",
+            photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_corporate"
+        },
+        {
+            name: "Antonio Serrano",
+            photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_real_estate"
+        },
+        {
+            name: "Carmen Vega",
+            photo: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_litigation"
+        }
+    ],
+    mexicocity: [
+        {
+            name: "Diego Hernández",
+            photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_banking"
+        },
+        {
+            name: "Sofía Morales",
+            photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_compliance"
+        },
+        {
+            name: "Roberto Castillo",
+            photo: "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=800&h=1000&fit=crop&q=80",
+            specialization: "spec_tax"
         }
     ],
     moscow: [

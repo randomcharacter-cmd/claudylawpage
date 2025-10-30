@@ -38,7 +38,7 @@ const translations = {
         why_dedicated_title: "Dedicated Service",
         why_dedicated_desc: "Personalized attention and commitment to your legal needs.",
         why_network_title: "Worldwide Network",
-        why_network_desc: "Seamless legal support across 9 major global cities.",
+        why_network_desc: "Seamless legal support across 12 major global cities.",
 
         // Contact
         contact_title: "Get in Touch",
@@ -66,12 +66,15 @@ const translations = {
         // Location names
         frankfurt: "Frankfurt",
         munich: "Munich",
+        berlin: "Berlin",
         istanbul: "Istanbul",
         paris: "Paris",
         london: "London",
         hongkong: "Hong Kong",
         newyork: "New York",
         bogota: "Bogotá",
+        barcelona: "Barcelona",
+        mexicocity: "Mexico City",
         moscow: "Moscow",
 
         // Location page
@@ -145,7 +148,7 @@ const translations = {
         why_dedicated_title: "Engagierter Service",
         why_dedicated_desc: "Persönliche Aufmerksamkeit und Engagement für Ihre rechtlichen Bedürfnisse.",
         why_network_title: "Weltweites Netzwerk",
-        why_network_desc: "Nahtlose rechtliche Unterstützung in 9 wichtigen Weltstädten.",
+        why_network_desc: "Nahtlose rechtliche Unterstützung in 12 wichtigen Weltstädten.",
 
         // Contact
         contact_title: "Kontaktieren Sie uns",
@@ -173,12 +176,15 @@ const translations = {
         // Location names
         frankfurt: "Frankfurt",
         munich: "München",
+        berlin: "Berlin",
         istanbul: "Istanbul",
         paris: "Paris",
         london: "London",
         hongkong: "Hongkong",
         newyork: "New York",
         bogota: "Bogotá",
+        barcelona: "Barcelona",
+        mexicocity: "Mexiko-Stadt",
         moscow: "Moskau",
 
         // Location page
@@ -252,7 +258,7 @@ const translations = {
         why_dedicated_title: "Servicio Dedicado",
         why_dedicated_desc: "Atención personalizada y compromiso con sus necesidades legales.",
         why_network_title: "Red Mundial",
-        why_network_desc: "Soporte legal sin interrupciones en 9 ciudades principales del mundo.",
+        why_network_desc: "Soporte legal sin interrupciones en 12 ciudades principales del mundo.",
 
         // Contact
         contact_title: "Póngase en Contacto",
@@ -280,12 +286,15 @@ const translations = {
         // Location names
         frankfurt: "Fráncfort",
         munich: "Múnich",
+        berlin: "Berlín",
         istanbul: "Estambul",
         paris: "París",
         london: "Londres",
         hongkong: "Hong Kong",
         newyork: "Nueva York",
         bogota: "Bogotá",
+        barcelona: "Barcelona",
+        mexicocity: "Ciudad de México",
         moscow: "Moscú",
 
         // Location page
