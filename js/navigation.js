@@ -24,8 +24,6 @@ function renderNavigation(isSubpage = false) {
                         <a href="${prefix}locations/barcelona.html" data-translate="barcelona">Barcelona</a>
                         <a href="${prefix}locations/mexicocity.html" data-translate="mexicocity">Mexico City</a>
                         <a href="${prefix}locations/bogota.html" data-translate="bogota">Bogotá</a>
-                        <a href="${prefix}locations/barcelona.html" data-translate="barcelona">Barcelona</a>
-                        <a href="${prefix}locations/mexicocity.html" data-translate="mexicocity">Mexico City</a>
                         <a href="${prefix}locations/moscow.html" data-translate="moscow">Moscow</a>
                     </div>
                 </li>
