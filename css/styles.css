@@ -842,6 +842,25 @@ footer {
     opacity: 0.8;
 }
 
+.made-by {
+    margin-top: 1rem;
+    opacity: 1 !important;
+}
+
+.made-by a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.made-by a:hover {
+    color: #d4ba86;
+    transform: translateY(-2px);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .mobile-menu-toggle {
